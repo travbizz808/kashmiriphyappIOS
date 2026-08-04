@@ -1,0 +1,39 @@
+name: Build iOS App
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build for Simulator
+        run: |
+          xcodebuild \
+            -project KashmirTravelifyCRM.xcodeproj \
+            -scheme KashmirTravelifyCRM \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Package app
+        run: |
+          cd build/Build/Products/Debug-iphonesimulator
+          zip -r KashmirTravelifyCRM-Simulator.zip KashmirTravelifyCRM.app
+
+      - name: Upload iOS build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kashmir-Travelify-iOS-Simulator
+          path: build/Build/Products/Debug-iphonesimulator/KashmirTravelifyCRM-Simulator.zip
