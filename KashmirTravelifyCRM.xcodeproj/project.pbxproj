@@ -1,0 +1,30 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A1 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {T1 = {CreatedOnToolsVersion = 16.0;};};}; buildConfigurationList = PCL; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = G1; productRefGroup = PG; projectDirPath = ""; projectRoot = ""; targets = (T1);};
+  G1 = {isa = PBXGroup; children = (SG, PG); sourceTree = "<group>";};
+  SG = {isa = PBXGroup; children = (F1,F2,F3,F4,F5); path = KashmirTravelifyCRM; sourceTree = "<group>";};
+  PG = {isa = PBXGroup; children = (PROD); name = Products; sourceTree = "<group>";};
+  F1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>";};
+  F2 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>";};
+  F3 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>";};
+  F4 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>";};
+  F5 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>";};
+  PROD = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KashmirTravelifyCRM.app; sourceTree = BUILT_PRODUCTS_DIR;};
+  B1 = {isa = PBXBuildFile; fileRef = F1;}; B2 = {isa = PBXBuildFile; fileRef = F2;}; B3 = {isa = PBXBuildFile; fileRef = F3;}; B4 = {isa = PBXBuildFile; fileRef = F4;};
+  T1 = {isa = PBXNativeTarget; buildConfigurationList = TCL; buildPhases = (SP,RP,FP); buildRules = (); dependencies = (); name = KashmirTravelifyCRM; productName = KashmirTravelifyCRM; productReference = PROD; productType = "com.apple.product-type.application";};
+  SP = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B1,B2,B3); runOnlyForDeploymentPostprocessing = 0;};
+  RP = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B4); runOnlyForDeploymentPostprocessing = 0;};
+  FP = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+  PCL = {isa = XCConfigurationList; buildConfigurations = (PD,PR); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  TCL = {isa = XCConfigurationList; buildConfigurations = (TD,TR); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  PD = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = iphoneos; SWIFT_VERSION = 5.0;}; name = Debug;};
+  PR = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = iphoneos; SWIFT_VERSION = 5.0;}; name = Release;};
+  TD = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KashmirTravelifyCRM/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.kashmirtravelify.crm.ios; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2";}; name = Debug;};
+  TR = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KashmirTravelifyCRM/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.kashmirtravelify.crm.ios; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; VALIDATE_PRODUCT = YES;}; name = Release;};
+ };
+ rootObject = A1;
+}
